@@ -7,7 +7,7 @@
 </p>
 
 
-![Example](./picture/example.png)
+![Example](./picture/example_zh.png)
 
 
 ## 📖 Overview
