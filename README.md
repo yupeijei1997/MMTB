@@ -46,6 +46,9 @@ pip install -r requirements.txt
 ## ⏳ Inference
 
 ### 💾 Test Data
+
+![overall](./picture/overall.png)
+
 Address: mmtb/data/Multi-Mission-Tool-Bench.jsonl
 
 Description: Our test data has undergone five rounds of manual inspection and correction by six senior algorithm researcher with years of experience in NLP, CV, and LLM, taking about one month in total. It boasts extremely high quality and accuracy, with a tight connection between multiple rounds of tasks, increasing difficulty, no unusable invalid data, and complete consistency with human distribution. Its evaluation results and conclusions are of great reference value for subsequent optimization in the Agent direction.
@@ -66,7 +69,11 @@ Note: In the actual construction process, the four algorithm researcher adopted 
 
 6. Finally, since human corrections might introduce errors, we used code to check for possible parameter type errors and unreasonable dependencies caused by manual operations, with two senior experts making the final fifth round of corrections.
 
-Through these five stages of data quality optimization, each piece of data was manually corrected and constructed by multiple algorithm experts, improving our test data's accuracy from less than 60% initially to 100% correctness. The combination of model generation and multiple human corrections also endowed our data with excellent diversity and quality. Moreover, since our data covers all possible action spaces, it is very balanced, capable of thoroughly testing the model's weaknesses.
+Through these five stages of data quality optimization, each piece of data was manually corrected and constructed by multiple algorithm experts, improving our test data's accuracy from less than 60% initially to 100% correctness. The combination of model generation and multiple human corrections also endowed our data with excellent diversity and quality. 
+
+At the same time, compared to other benchmarks such as BFCL, T-EVAL, etc., our test data covers all possible action spaces, and in the second to fourth rounds of true multi-turn tasks, the coverage rate has reached two 100%, which also makes our data distribution very balanced, capable of testing out the weaknesses of the model without any blind spots.
+
+![compare](./picture/compare.png)
 
 Ultimately, this high-quality data set we constructed laid the foundation for our subsequent experiments, lending absolute credibility to our conclusions.
 
