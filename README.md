@@ -88,7 +88,7 @@ The overall framework diagram is as follows:
 
 
 ### 🤖 API Models
-This project supports multiple API models, including: GPT-4o, GPT-o1, Gemini-1.5, Claude-3.5, Claude-3.7, Mistral-Large, etc.
+This project supports multiple API models, including: GPT-4o, GPT-o1, Gemini-1.5, Claude-3.5, Mistral-Large, etc.
 
 Taking GPT-4o as an example, set the following key in the environment variables
 
