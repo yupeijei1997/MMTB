@@ -1,0 +1,8 @@
+ipdb
+requests
+pandas
+openai
+jieba==0.42.1
+rouge==1.0.1
+rouge-chinese==1.0.3
+rouge-score==0.1.2
