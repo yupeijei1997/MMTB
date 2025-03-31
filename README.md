@@ -224,6 +224,15 @@ python3 analysis_result.py \
 - All models show poor accuracy for the true multi-turn three subtypes, with even the strongest GPT-o1 model only achieving 40-50% accuracy. This further explains why, starting from the second round, the accuracy of each model begins to drop sharply.
 - In particular, among the three subtypes, the effect on long-term memory is the worst, and long-term memory only appears in the third and fourth rounds of tasks (when it appears in the third round, it tests the model's ability to remember information from the first round. When it appears in the fourth round, it tests the model's ability to remember information from both the first and second rounds, which is more challenging). This also explains why there is a further decline in accuracy during the third and fourth rounds compared to the second round.
 
+### 热力图分析
+
+![Heatmap](./picture/heatmap.png)
+
+- The darker the color, the higher the accuracy rate. The denser the current layer, the more cases are done correctly at this layer, and the sparser it is, the more cases are done incorrectly.
+- The OpenAI series models GPT-o1 and GPT-4o perform the best overall, with significantly fewer blank areas in the third and fourth layers compared to other models.
+- Qwen2.5 and Gemini-1.5 both have noticeable blank areas starting from the third layer, indicating poor performance in certain action spaces.
+- The three open-source specialized models overall do not perform as well as the above four general models. Starting from the third layer, the number of blank areas further increases, and the overall layout is relatively sparse.
+
 ## 🗺️ Roadmap
 
 In the near future, we plan to release the following content:
