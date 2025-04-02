@@ -295,7 +295,7 @@ if __name__ == "__main__":
 
     # Add arguments for two lists of strings
     parser.add_argument(
-        "--layer-num-total", type=str, default=4, help="The total number of levels in the path tree"
+        "--layer-num-total", type=int, default=4, help="The total number of levels in the path tree"
     )
     parser.add_argument(
         "--user-model", type=str, default="gpt4o", help="Model used by the user agent"
