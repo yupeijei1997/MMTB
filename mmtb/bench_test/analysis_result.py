@@ -645,7 +645,7 @@ def str2bool(v):
 
 def parse_argument():
     parser = argparse.ArgumentParser()
-    parser.add_argument("data_file", type=str, default=None)
+    parser.add_argument("--data_file", type=str, default=None)
     parser.add_argument("--parameters_eval", type=str2bool, default=True)
     parser.add_argument("--weight_eval", type=str2bool, default=False)
     parser.add_argument("--skip_first", type=str2bool, default=False)
