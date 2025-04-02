@@ -19,7 +19,7 @@ However, existing benchmarks predominantly access agents in single-mission scena
 
 
 ## 🚀 News
-
+- **[2025.04.02]** 🎆 We have released the code for Controllable Multi Agent Data Generation。
 - **[2025.03.30]** 🎉 We have released the test data and evaluation code for the Multi-Mission Tool Bench.
 - **[2025.03.18]** 🏅️ Our team achieved the first place in China and the second place in the world in the Agent category in the [March 2025 SuperClue Chinese Large Model Benchmark Evaluation](https://mp.weixin.qq.com/s/Nv0YozaCX4cmeiroyq7YEg), outperforming DeepSeek, Qianwen, and Doubao by more than 5 points, 10 points, and 15 points, respectively.
 
