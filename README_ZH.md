@@ -326,5 +326,5 @@ Planner：getWaifuDetails(image_id=778899)
    - [x] 发布 Multi-Mission Tool Bench 测试数据
    - [x] 发布 Multi-Mission Tool Bench 评估代码
    - [x] 发布多智能体生成框架代码
-   - [ ] 发布 LeadBoard Website，并持续更新
+   - [x] 发布 LeadBoard Website，并持续更新
    - [ ] 发布论文 Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
