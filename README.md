@@ -6,7 +6,8 @@
     <a href="README_ZH.md">中文</a>
     <br>
     📊 <a href="https://harrywgcn.github.io/mmtb-leaderboard/">LeadBoard</a> •
-    🤗 <a href="https://huggingface.co/datasets/jpy/MMTB">Dataset</a>
+    🤗 <a href="https://huggingface.co/datasets/jpy/MMTB">Dataset</a> •
+    📚 <a href="https://arxiv.org/abs/2504.02623">Preprint Paper</a>
 </p>
 
 
@@ -22,7 +23,8 @@ However, existing benchmarks predominantly access agents in single-mission scena
 
 
 ## 🚀 News
-- **[2025.04.03]** 🌟 We have released the <a href="https://harrywgcn.github.io/mmtb-leaderboard/">LeadBoard Website</a>. Everyone can access the latest results of models on the Multi-Mission Tool Bench leaderboard there.
+- **[2025.04.04]** 🔥 We have released the [Preprint Paper](https://arxiv.org/abs/2504.02623), and we will make further revisions in the final version.
+- **[2025.04.03]** 🌟 We have released the [LeadBoard Website](https://harrywgcn.github.io/mmtb-leaderboard/). Everyone can access the latest results of models on the Multi-Mission Tool Bench leaderboard there.
 - **[2025.04.02]** 🎆 We have released the code for Controllable Multi Agent Data Generation。
 - **[2025.03.30]** 🎉 We have released the test data and evaluation code for the Multi-Mission Tool Bench.
 - **[2025.03.18]** 🏅️ Our team achieved the first place in China and the second place in the world in the Agent category in the [March 2025 SuperClue Chinese Large Model Benchmark Evaluation](https://mp.weixin.qq.com/s/Nv0YozaCX4cmeiroyq7YEg), outperforming DeepSeek, Qianwen, and Doubao by more than 5 points, 10 points, and 15 points, respectively.

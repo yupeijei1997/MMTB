@@ -6,7 +6,8 @@
     <a>中文</a>
     <br>
     📊 <a href="https://harrywgcn.github.io/mmtb-leaderboard/">排行榜</a> •
-    🤗 <a href="https://huggingface.co/datasets/jpy/MMTB">数据集</a>
+    🤗 <a href="https://huggingface.co/datasets/jpy/MMTB">数据集</a> •
+    📚 <a href="https://arxiv.org/abs/2504.02623">预印版论文</a>
 </p>
 
 
@@ -21,7 +22,7 @@
 
 
 ## 🚀 News
-
+- **[2025.04.04]** 🔥 我们发布了 <a href="https://arxiv.org/abs/2504.02623">预印版论文</a>，我们还会在最终版本进行修改。
 - **[2025.04.03]** 🌟 我们发布了 <a href="https://harrywgcn.github.io/mmtb-leaderboard/">LeadBoard Website</a>，所有人都可以在这上面获取最新模型在 Multi-Mission Tool Bench 榜单上的结果。
 - **[2025.04.02]** 🎆 我们发布了 Controllable Multi Agent Data Generation 的代码。
 - **[2025.03.30]** 🎉 我们发布了 Multi-Mission Tool Bench 的测试数据和评估代码。
@@ -327,4 +328,4 @@ Planner：getWaifuDetails(image_id=778899)
    - [x] 发布 Multi-Mission Tool Bench 评估代码
    - [x] 发布多智能体生成框架代码
    - [x] 发布 LeadBoard Website，并持续更新
-   - [ ] 发布论文 Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
+   - [x] 发布论文 Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
