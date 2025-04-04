@@ -340,4 +340,4 @@ In the near future, we plan to release the following content:
    - [x] Release Multi-Mission Tool Bench evaluation code
    - [x] Release multi agent generation framework code
    - [x] Launch LeadBoard Website and provide ongoing updates
-   - [ ] Publish the paper Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
+   - [x] Publish the paper Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
