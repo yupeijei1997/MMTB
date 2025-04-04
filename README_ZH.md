@@ -329,3 +329,16 @@ Planner：getWaifuDetails(image_id=778899)
    - [x] 发布多智能体生成框架代码
    - [x] 发布 LeadBoard Website，并持续更新
    - [x] 发布论文 Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
+
+## 🔎 Citation
+```
+@misc{yu2025multimissiontoolbenchassessing,
+      title={Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions}, 
+      author={PeiJie Yu and Yifan Yang and Jinjian Li and Zelong Zhang and Haorui Wang and Xiao Feng and Feng Zhang},
+      year={2025},
+      eprint={2504.02623},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2504.02623}, 
+}
+```

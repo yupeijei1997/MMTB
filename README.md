@@ -341,3 +341,17 @@ In the near future, we plan to release the following content:
    - [x] Release multi agent generation framework code
    - [x] Launch LeadBoard Website and provide ongoing updates
    - [x] Publish the paper Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions
+
+## 🔎 Citation
+
+```
+@misc{yu2025multimissiontoolbenchassessing,
+      title={Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions}, 
+      author={PeiJie Yu and Yifan Yang and Jinjian Li and Zelong Zhang and Haorui Wang and Xiao Feng and Feng Zhang},
+      year={2025},
+      eprint={2504.02623},
+      archivePrefix={arXiv},
+      primaryClass={cs.AI},
+      url={https://arxiv.org/abs/2504.02623}, 
+}
+```
