@@ -16,7 +16,7 @@ class ToolACEMultiTurnMessages(SimulateMultiTurnMessages):
             self.model_messages = remove_messages(messages, is_english=True)
         else:
             if messages[-1]["role"] == "user":
-                self.model_messages.append({"role":"user", "content": messages[-1]["content"].replace("用户：", "").replace("User:", "").strip()})
+                self.model_messages.append({"role": "user", "content": messages[-1]["content"].replace("用户：", "").replace("User:", "").strip()})
             elif messages[-1]["role"] == "tool":
                 observations = json.loads(messages[-1]["content"])
                 functions = messages[-2]["tool_calls"]
@@ -27,19 +27,19 @@ class ToolACEMultiTurnMessages(SimulateMultiTurnMessages):
                         "name": function["function"]["name"],
                         "results": observation
                     })
-                self.model_messages.append({"role":"user", "content": json.dumps(ret_observation)})
+                self.model_messages.append({"role": "user", "content": json.dumps(ret_observation)})
 
         return self.model_messages
 
     def post_process_tool_call(self, answer):
         try:
-            self.model_messages.append({"role":"assistant", "content": answer})
+            self.model_messages.append({"role": "assistant", "content": answer})
             if answer.startswith("[") and answer.endswith("]"):
                 astor = AstVisitor()
                 astor.visit(ast.parse(answer))
                 answer = astor.function
                 text = "use {} to solve user problem".format(", ".join([_["name"] for _ in answer]))
-                tool_calls = [{"id":str(uuid.uuid4()), "function":_} for _ in answer]
+                tool_calls = [{"id": str(uuid.uuid4()), "function": _} for _ in answer]
             else:
                 text = answer
                 tool_calls = None

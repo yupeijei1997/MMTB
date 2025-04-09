@@ -31,7 +31,7 @@ class SimulateMultiTurnMessages:
 
     def add_date_to_message(self, message, env_info=None):
         if env_info is not None and self.add_date:
-            system_content = message[0]['content'] if message[0]["role"] == "system" else ""
+            system_content = message[0]["content"] if message[0]["role"] == "system" else ""
             if self.is_english:
                 system_content = system_content[:system_content.rfind("Current Date:")] + "\n\nCurrent Date:" + self.add_weekday_date(env_info)
             else:
@@ -46,10 +46,10 @@ class SimulateMultiTurnMessages:
 
     def request_funcall(self, messages, tools, env_info=None):
         url = self.model_url
-        headers = {'Content-Type': 'application/json'}
+        headers = {"Content-Type": "application/json"}
         data = {
-            'messages': self.add_date_to_message(self.preprocess_to_simple(messages), env_info),
-            'tools': tools,
+            "messages": self.add_date_to_message(self.preprocess_to_simple(messages), env_info),
+            "tools": tools,
             "date": self.add_weekday_date(env_info)
         }
 

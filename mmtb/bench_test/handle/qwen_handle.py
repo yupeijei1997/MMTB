@@ -64,7 +64,6 @@ class QwenMultiTurnMessages(SimulateMultiTurnMessages):
                     is_english=self.is_english
                 )
             elif messages[-1]["role"] == "tool":
-                # messages.append({"role": "tool", "name": "get_current_temperature", "content": "22.0"})
                 assistant = None
                 observation = []
                 idx = -1

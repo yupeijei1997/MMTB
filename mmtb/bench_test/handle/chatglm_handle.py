@@ -36,14 +36,15 @@ class ChatGLMMultiTurnMessages(SimulateMultiTurnMessages):
             if len(answer_split) >= 2:
                 text = f"use {answer_split[0]} to solve user problem"
                 tool_calls = [{"id": str(uuid.uuid4()), "function": {
-                    "name":answer_split[0],
+                    "name": answer_split[0],
                     "arguments": json.loads(answer_split[1])
                 }}]
             else:
                 text = answer
                 tool_calls = None
             return text, tool_calls
-        except:
+        except Exception as e:
+            print(f"error: {e}")
             return answer, None
 
 

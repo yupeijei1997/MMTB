@@ -15,9 +15,9 @@ class XLAMMultiTurnMessages(SimulateMultiTurnMessages):
             self.model_messages = remove_messages(messages, is_english=True)
         else:
             if messages[-1]["role"] == "user":
-                self.model_messages.append({"role":"user", "content": messages[-1]["content"].replace("用户：", "").replace("User:", "").strip()})
+                self.model_messages.append({"role": "user", "content": messages[-1]["content"].replace("用户：", "").replace("User:", "").strip()})
             elif messages[-1]["role"] == "tool":
-                self.model_messages.append({"role":"tool", "content": messages[-1]["content"]})
+                self.model_messages.append({"role": "tool", "content": messages[-1]["content"]})
         return self.model_messages
 
     def post_process_tool_call(self, answer):
@@ -35,10 +35,10 @@ class XLAMMultiTurnMessages(SimulateMultiTurnMessages):
                         _["name"] for _ in answer["tool_calls"]
                     ])
                 )
-                tool_calls = [{"id":str(uuid.uuid4()), "function":_} for _ in answer["tool_calls"]]
-                self.model_messages.append({"role":"assistant", "content": text, "tool_calls": answer["tool_calls"]})
+                tool_calls = [{"id": str(uuid.uuid4()), "function": _} for _ in answer["tool_calls"]]
+                self.model_messages.append({"role": "assistant", "content": text, "tool_calls": answer["tool_calls"]})
             else:
-                self.model_messages.append({"role":"assistant", "content": answer})
+                self.model_messages.append({"role": "assistant", "content": answer})
                 text = answer
                 tool_calls = None
 

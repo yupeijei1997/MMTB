@@ -18,7 +18,7 @@ class LlamaMultiTurnMessages(SimulateMultiTurnMessages):
         else:
             if messages[-1]["role"] == "user":
                 self.model_messages += remove_messages(
-                    [{"role":"user", "content": messages[-1]["content"]}],
+                    [{"role": "user", "content": messages[-1]["content"]}],
                     is_english=self.is_english
                 )
             elif messages[-1]["role"] == "tool":

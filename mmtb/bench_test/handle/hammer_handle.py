@@ -17,7 +17,7 @@ class HammerMultiTurnMessages(SimulateMultiTurnMessages):
         else:
             if messages[-1]["role"] == "user":
                 self.model_messages += remove_messages(
-                    [{"role":"user", "content": messages[-1]["content"]}],
+                    [{"role": "user", "content": messages[-1]["content"]}],
                     is_english=self.is_english
                 )
             elif messages[-1]["role"] == "tool":
@@ -30,7 +30,7 @@ class HammerMultiTurnMessages(SimulateMultiTurnMessages):
                         "name": function["function"]["name"],
                         "results": observation
                     })
-                self.model_messages.append({"role":"user", "content": json.dumps(ret_observation)})
+                self.model_messages.append({"role": "user", "content": json.dumps(ret_observation)})
 
         return self.model_messages
     

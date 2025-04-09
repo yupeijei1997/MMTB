@@ -51,7 +51,7 @@ class FCMMultiTurnMessages(SimulateMultiTurnMessages):
             if "<function=" in answer and "</function>" in answer:
                 try:
                     # <function=get_current_weather>{"location": "Boston, MA"}</function><function=get_current_weather>{"location": "San Francisco, CA"}</function>
-                    self.model_messages.append({"role":"assistant", "content": answer})
+                    self.model_messages.append({"role": "assistant", "content": answer})
                     text = answer
                     tool_calls = None
                     assert answer.count("<function=") == answer.count("</function>")
@@ -63,13 +63,13 @@ class FCMMultiTurnMessages(SimulateMultiTurnMessages):
                         argument = json.loads(tc[tc.find(">{")+1:])
                         if tool_calls is None:
                             tool_calls = []
-                        tool_calls.append({"id":str(uuid.uuid4()), "function":{
+                        tool_calls.append({"id": str(uuid.uuid4()), "function": {
                             "name": name, "arguments": argument
                         }})
                 except:
                     pass
             else:
-                self.model_messages.append({"role":"assistant", "content": answer})
+                self.model_messages.append({"role": "assistant", "content": answer})
                 text = answer
                 tool_calls = None
             return text, tool_calls
