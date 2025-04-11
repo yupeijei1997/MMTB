@@ -235,7 +235,7 @@ python3 analysis_result.py \
 - All models show poor accuracy for the true multi-turn three subtypes, with even the strongest GPT-o1 model only achieving 40-50% accuracy. This further explains why, starting from the second round, the accuracy of each model begins to drop sharply.
 - In particular, among the three subtypes, the effect on long-term memory is the worst, and long-term memory only appears in the third and fourth rounds of missions (when it appears in the third round, it tests the model's ability to remember information from the first round. When it appears in the fourth round, it tests the model's ability to remember information from both the first and second rounds, which is more challenging). This also explains why there is a further decline in accuracy during the third and fourth rounds compared to the second round.
 
-### 热力图分析
+### Heatmap analysis
 
 ![Heatmap](./picture/heatmap.png)
 
