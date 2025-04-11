@@ -334,7 +334,7 @@ Planner：getWaifuDetails(image_id=778899)
 ```
 @misc{yu2025multimissiontoolbenchassessing,
       title={Multi-Mission Tool Bench: Assessing the Robustness of LLM based Agents through Related and Dynamic Missions}, 
-      author={PeiJie Yu and Yifan Yang and Jinjian Li and Zelong Zhang and Haorui Wang and Xiao Feng and Feng Zhang},
+      author={Peijie Yu and Yifan Yang and Jinjian Li and Zelong Zhang and Haorui Wang and Xiao Feng and Feng Zhang},
       year={2025},
       eprint={2504.02623},
       archivePrefix={arXiv},
